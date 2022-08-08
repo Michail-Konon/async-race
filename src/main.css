@@ -1,0 +1,198 @@
+
+/* basic */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+}
+
+.header {
+  width: 100vw;
+  height: 4vh;
+}
+
+.page {
+  width: 100vw;
+  height: 93vh;
+  padding-left: 10px;
+  padding-right: 10px;
+} 
+
+/* buttons */
+
+.main-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-left: 1vw;
+}
+.buttons {
+  width: 5vw;
+  height: 3vh;
+  padding: 3px 8px;
+}
+
+button:disabled {
+  background-color: grey;
+}
+
+.btn_garage-view,
+.btn_winners-view {
+  width: 8vw;
+  height: 3vh;
+}
+
+.btn_generate_cars {
+  width: 10vw;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-left: 1vw;
+}
+.main-block_pagination {
+  justify-content: flex-start;
+  margin-top: 10vh;
+}
+
+/* garage-page */
+
+.garage-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: scroll;
+}
+
+.generate-cars {
+  width: 24vw;
+  margin-bottom: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.field-create,
+.field-update,
+.field-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0.7vh;
+}
+
+.generate-input_text {
+  width: 13vw;
+  height: 2.3vh;
+}
+
+.generate-input_color {
+  margin: .4rem
+}
+
+.garage-track-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: white;
+  margin: 0;
+  margin-top: 0.5vh;
+}
+h1 {
+  font-size: 2vw;
+}
+h3 {
+  font-size: 1.5vw;
+}
+
+.track-block_cars,
+.car {
+  display: flex;
+  flex-direction: column;
+}
+
+.car {
+  border-bottom: 3px dashed white;
+  margin-bottom: 1vh;
+}
+.car-options,
+.car-control {
+  display: flex;
+  flex-direction: row;
+  margin: 0.3vh 0;
+}
+
+.car-options_title {
+  color: rgb(245, 245, 69);
+  font-size: 1vw;
+  margin: 0.2vh 1vw;
+}
+
+.car-control_start,
+.car-control_stop {
+  width: 2.8vw;
+  height: 1.5vw;
+  margin-right: 0.3vw;
+}
+
+.car-img {
+  margin-left: 1vw;
+}
+.car-img svg,
+.car-img-win svg{
+  padding: 0;
+  margin: 0;
+}
+.flag {
+  margin-left: 76vw;
+  height: 5vh;
+  width: 3vw;
+  background: url(assets/flag.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* page winners */
+
+.title-winners {
+  padding-bottom: 3vh;
+}
+
+.main-block_table {
+  color: white;
+  font-size: 1vw;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+thead {
+  background-color: wheat;
+  font-weight: 200;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px 10px;
+  background-color: wheat;
+}
+
+.winner-notice {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  width: 60vw;
+  height: 10vh;
+  color: white;
+  font-size: 3.5vw;
+  font-weight: 500;
+}
+
+.hide {
+  display: none;
+}
